@@ -1,4 +1,4 @@
-## Definir o nome do app ainda
+## ⚽ PlayUp - evolução, jogo e progresso - perfeito para jovens atletas criando sua história!
 
 Objetivo: Criar uma plataforma que combine monitoramento de performance e rede social para jovens jogadores de futebol, permitindo que treinadores, pais e os próprios atletas acompanhem o desenvolvimento técnico e físico, ao mesmo tempo em que constroem um “portfólio” esportivo. 
 
