@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #00AEEF;
+    padding: 20px;
+  }
+  .dashboard {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+  }
+  .card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  .card h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  /* Donut Charts */
+  .donut-chart {
+    display: flex;
+    gap: 40px;
+  }
+  .chart-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .donut {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .donut.one {
+    background: conic-gradient(#4caf50 0 77%, #e0e0e0 0 100%);
+  }
+  .donut.two {
+    background: conic-gradient(#757575 0 67%, #e0e0e0 0 100%);
+  }
+  .donut::after {
+    content: '';
+    width: 56px;
+    height: 56px;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+  }
+  .percentage {
+    position: relative;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+  }
+  .chart-label {
+    font-size: 16px;
+  }
+  /* Alert List */
+  .alert-list .alert {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    padding: 12px;
+  }
+  .icon-alert {
+    width: 24px;
+    height: 24px;
+    background: #e53935;
+    color: #fff;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+  }
+  /* Calendar */
+  .calendar {
+    text-align: center;
+  }
+  .calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    font-weight: 600;
+  }
+  .calendar-header div {
+    cursor: pointer;
+    user-select: none;
+  }
+  .weekdays,
+  .days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 4px;
+  }
+  .weekdays div {
+    font-size: 14px;
+  }
+  .days div {
+    font-size: 14px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  .days div.miss::after {
+    content: '';
+    position: absolute;
+    bottom: 4px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 6px;
+    height: 6px;
+    background: #e53935;
+    border-radius: 50%;
+  }
+  .calendar-legend {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+    font-size: 14px;
+    gap: 6px;
+  }
+  .legend-dot {
+    width: 10px;
+    height: 10px;
+    background: #e53935;
+    border-radius: 50%;
+  }
+  /* Messages */
+  .messages .message {
+    position: relative;
+    padding-right: 24px;
+    margin-bottom: 20px;
+  }
+  .messages .message:last-child {
+    margin-bottom: 0;
+  }
+  .messages .message p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .messages .message::after {
+    content: '💬';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  
