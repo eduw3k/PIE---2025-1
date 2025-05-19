@@ -16,7 +16,6 @@ Mencione todos aqueles que ajudaram a levantar o projeto desde o seu início
 
 * **Lucas Luiz Borges RA506811** 
 * **Eduardo Gabriel dos Santos Silva RA506798**
-* **Paulo Vicente Kushino RA506784** 
 * **Lucas Avancini Mendonça RA506855**
 * **Nícollas Montemezzo Alencar RA506825**
 
