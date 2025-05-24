@@ -1,0 +1,84 @@
+body {
+  background-color: #2e2e2e;
+  color: white;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.logo {
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+.container {
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+label {
+  text-align: left;
+  margin: 10px 0 5px 0;
+  font-size: 16px;
+}
+
+input {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #888;
+  color: white;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+/* Botão "Entrar" */
+#botao-entrar {
+  background-color: #0052cc;
+  color: white;
+  font-size: 16px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 5px;
+  transition: background-color 0.3s;
+}
+
+/* Botão "Crie uma conta" */
+.criar-conta {
+  background-color: #ffc800;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  max-width: 200px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Link dentro do botão */
+.criar-conta a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  display: block;
+}
+
+.criar-conta:hover {
+    background-color: #c39d04;
+}
+
+#botao-entrar:hover {
+    background-color: #004b99;
+}
