@@ -19,4 +19,17 @@ Mencione todos aqueles que ajudaram a levantar o projeto desde o seu início
 * **Lucas Avancini Mendonça RA506855**
 * **Nícollas Montemezzo Alencar RA506825**
 
-Você também pode ver a lista de todos os [colaboradores](https://github.com/usuario/projeto/colaboradores) que participaram deste projeto.
+## 📦 Requisitos
+
+Para rodar o projeto localmente, você vai precisar de:
+
+* Um navegador moderno (recomendado: Google Chrome ou Firefox)
+
+* Um editor de código (ex: [Visual Studio Code](https://code.visualstudio.com/))
+
+* Git instalado (opcional, para clonar o repositório)
+
+* Servidor local simples (opcional, como extensão Live Server no VS Code) 💡 Isso ajuda a evitar problemas ao carregar arquivos com file:// em vez de http://
+
+Você também pode ver [AQUI](https://github.com/eduw3k/PIE---2025-1/graphs/contributors) a lista de todos os colaboradores que participaram deste projeto.
+
