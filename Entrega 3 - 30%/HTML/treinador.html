@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Treinador-tela central</title>
+  <link rel="stylesheet" href="../css/treinador.css">
+</head>
+<body>
+  <div class="dashboard-container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="card add-champ">
+        <h2>Adicionar campeonato</h2>
+        <div class="form-group">
+          <label for="jogador1"><i class="icon-player"></i> Inserir nome do jogador</label>
+          <input type="text" id="jogador1" placeholder="Insira data">
+        </div>
+        <div class="form-group">
+          <label for="jogador2"><i class="icon-player"></i> Inserir nome do jogador</label>
+          <input type="text" id="jogador2" placeholder="Insira data">
+        </div>
+      </div>
+      <div class="card access-games">
+        <h2>Acessar jogos</h2>
+        <ul>
+          <li><span class="dot"></span> TREINOS Jan/25</li>
+          <li><span class="dot"></span> TREINOS Fev/25</li>
+          <li><span class="dot"></span> TREINOS Mar/25</li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="card alert-event">
+        <h2>Alerta de evento importante</h2>
+        <textarea placeholder="descreva o evento neste campo..."></textarea>
+      </div>
+
+      <div class="card performance">
+        <div class="perf-header">
+          <h2>Indicador de Performance</h2>
+          <a href="#">Grupo &gt; Jogador &gt;</a>
+        </div>
+        <div class="chart-placeholder">[Gráfico aqui]</div>
+        <div class="legend">
+          <div><span class="dot train"></span> Treinos</div>
+          <div><span class="dot test"></span> Testes físicos</div>
+          <div><span class="dot game"></span> Jogos</div>
+        </div>
+      </div>
+
+      <div class="card history-table">
+        <h2>Histórico de Treinos</h2>
+        <table>
+          <tr><td>Preencha a data</td><td><input type="text"></td></tr>
+          <tr><td>Tempo</td><td><input type="text"></td></tr>
+          <tr><td>Gol</td><td><input type="text"></td></tr>
+          <tr><td>Assistência</td><td><input type="text"></td></tr>
+          <tr><td>Falta</td><td><input type="text"></td></tr>
+          <tr><td>Passes</td><td><input type="text"></td></tr>
+          <tr><td>Frequência Cardíaca média (BPM)</td><td><input type="text"></td></tr>
+        </table>
+      </div>
+
+      <div class="card feedback">
+        <h2>Feedback Personalizado</h2>
+        <textarea placeholder="deixe seu comentário..."></textarea>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
