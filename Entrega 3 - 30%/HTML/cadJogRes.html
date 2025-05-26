@@ -1,44 +1,47 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro - Jogador e Responsável</title>
-    <link rel="stylesheet" href="../css/cadJogRes.css">
-    <script src="../js/cadJogRes.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cadastro - Jogador e Responsável</title>
+  <link rel="stylesheet" href="../css/cadJogRes.css" />
+  <script src="../js/cadJogRes.js" defer></script>
 </head>
 <body>
-<main>
+  <main>
     <div class="container">
-        <form class="cadastro">
-            <label for="responsavel">Nome completo (Responsável):</label>
-            <input type="text" id="responsavel" name="responsavel" required>
+      <form class="cadastro">
+        <label for="responsavel">Nome completo (Responsável):</label>
+        <input type="text" id="responsavel" name="responsavel" required />
 
-            <label for="jogador">Nome completo (Jogador):</label>
-            <input type="text" id="jogador" name="jogador" required>
+        <label for="jogador">Nome completo (Jogador):</label>
+        <input type="text" id="jogador" name="jogador" required />
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+        <label for="treinador">Nome do treinador responsável:</label>
+        <input type="text" id="treinador" name="treinador" required />
 
-            <div class="senha-container">
-                <div>
-                    <label for="senha">Senha:</label>
-                    <input type="password" id="senha" name="senha" required>
-                </div>
-                <div>
-                    <label for="confirma-senha">Confirmar senha:</label>
-                    <input type="password" id="confirma-senha" name="confirma-senha" required>
-                </div>
-            </div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
 
-            <p id="error-message" style="display: none;">As senhas não coincidem.</p>
+        <div class="senha-container">
+          <div>
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required />
+          </div>
+          <div>
+            <label for="confirma-senha">Confirmar senha:</label>
+            <input type="password" id="confirma-senha" name="confirma-senha" required />
+          </div>
+        </div>
 
-            <hr>
+        <p id="error-message" style="display: none;">As senhas não coincidem.</p>
 
-            <button type="submit" id="botao-cadastrar">Cadastrar</button>
-            <button type="button" id="botao-login" onclick="window.location.href='login.html'">Já tenho uma conta</button>
-        </form>
+        <hr />
+
+        <button type="submit" id="botao-cadastrar">Cadastrar</button>
+        <button type="button" id="botao-login" onclick="window.location.href='login.html'">Já tenho uma conta</button>
+      </form>
     </div>
-</main>
+  </main>
 </body>
 </html>
