@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Treinador-tela central</title>
   <link rel="stylesheet" href="../css/treinador.css">
+  <script src="../js/treinador.js"></script>
 </head>
 <body>
   <div class="dashboard-container">
@@ -33,6 +34,24 @@
 
     <!-- Main Content -->
     <main class="main-content">
+    <div class="card player-selector">
+       <h2>Gerenciar jogadores</h2>
+       <div>
+        <label for="modo-selecao">Modo de seleção:</label>
+        <select id="modo-selecao">
+           <option value="individual">Individual</option>
+           <option value="todos">Todos os jogadores</option>
+      </select>
+     </div>
+
+    <div id="seletor-individual" style="margin-top: 10px;">
+       <label for="jogador-select">Escolha o jogador:</label>
+       <select id="jogador-select">
+          <option>Carregando jogadores...</option>
+    </select>
+  </div>
+</div>
+
       <div class="card alert-event">
         <h2>Alerta de evento importante</h2>
         <textarea placeholder="descreva o evento neste campo..."></textarea>
