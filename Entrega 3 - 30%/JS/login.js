@@ -16,6 +16,9 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
+    // <<<-- GUARDA O USUÁRIO LOGADO
+    localStorage.setItem("userLogado", JSON.stringify(user));
+
     switch (user.tipo) {
       case "jogador":
         window.location.href = "jogador.html";
@@ -31,3 +34,4 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
