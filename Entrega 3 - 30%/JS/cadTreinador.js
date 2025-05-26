@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   form.addEventListener("submit", e => {
     e.preventDefault();
+
     if (senha.value !== confirma.value) {
       erroMsg.style.display = "block";
       return;
@@ -16,14 +17,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const users = JSON.parse(localStorage.getItem("users")) || [];
 
-    users.push({
+    const treinador = {
       nome: nomeInput.value,
       senha: senha.value,
       tipo: "treinador"
-    });
+    };
+
+    users.push(treinador);
     localStorage.setItem("users", JSON.stringify(users));
 
     alert("Cadastro de treinador realizado!");
     window.location.href = "login.html";
   });
 });
+
