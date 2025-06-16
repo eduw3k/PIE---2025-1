@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Treinador</title>
+    <link rel="stylesheet" href="../css/cadTreinador.css">
+    <script src="../js/cadTreinador.js"></script>
+</head>
+<body>
+<main>
+    <div class="container">
+        <form class="cadastro">
+
+            <label for="treinador">Nome completo:</label>
+            <input type="text" id="treinador" name="treinador" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <div class="senha-container">
+                <div>
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha" required>
+                </div>
+                <div>
+                    <label for="confirma-senha">Confirmar senha:</label>
+                    <input type="password" id="confirma-senha" name="confirma-senha" required>
+                </div>
+            </div>
+
+            <p id="error-message" style="display: none;">As senhas não coincidem.</p>
+
+            <hr>
+
+            <button type="submit" id="botao-cadastrar">Cadastrar</button>
+            <button type="button" id="botao-login" onclick="window.location.href='login.html'">Já tenho uma conta</button>
+        </form>
+    </div>
+</main>
+</body>
+</html>
