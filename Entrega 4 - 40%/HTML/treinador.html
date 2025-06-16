@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Treinador-tela central</title>
+  <link rel="stylesheet" href="../css/treinador.css">
+  <script src="../js/treinador.js"></script>
+</head>
+<body>
+  <div class="container">
+      <!-- ========== SIDEBAR ========== -->
+     <aside class="sidebar">
+  <!-- Bloco principal de conteúdo da sidebar -->
+  <div>
+    <div class="card">
+      <h3>Adicionar campeonato</h3>
+      <button>🏆 Inserir categoria do campeonato<br /><span>Inserir data</span></button>
+      <button>🏆 Inserir categoria do campeonato<br /><span>Inserir data</span></button>
+    </div>
+
+    <div class="card">
+      <h3>Acessar avaliações</h3>
+      <button>⚽ TREINOS<br /><span>Jan 2025</span></button>
+      <button>⚽ TREINOS<br /><span>Fev 2025</span></button>
+      <button>⚽ TREINOS<br /><span>Mar 2025</span></button>
+    </div>
+
+    <div class="card player-selector">
+      <h3>Gerenciar jogadores</h3>
+      <div>
+        <label for="modo-selecao">Modo de seleção:</label>
+        <select id="modo-selecao" style="width: 220px; padding: 8px; border-radius: 6px; background: #ffffff">
+          <option value="individual">👤 INDIVIDUAL</option>
+          <option value="todos">👥 TODOS OS JOGADORES</option>
+        </select>
+      </div>
+
+      <div id="seletor-individual" style="margin-top: 15px;">
+        <label for="jogador-select">Escolha o jogador:</label>
+        <select id="jogador-select" style="width: 220px; padding: 8px; border-radius: 6px; background: #ffffff">
+          <option>Carregando jogadores...</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <a href="../html/login.html" class="btn-sair" style="background-color: #ff3b389b; font-size: 15px;">Sair ⍈</a>
+</aside>
+
+      <!-- ========== ÁREA PRINCIPAL ========== -->
+      <main class="main">
+        <!-- Alerta -->
+        <section class="alerta card">
+          <h3>Alerta de evento importante</h3>
+          <textarea placeholder="descreva o evento neste campo..."></textarea>
+          <button class="btn-primary">Enviar</button>
+        </section>
+
+        <!-- Gráfico -->
+        <section class="grafico card">
+          <h3>Indicador de Performance</h3>
+          <img src="grafico-exemplo.png" alt="Gráfico de performance" />
+          <div class="legenda">
+            <span class="treinos">Treinos</span>
+            <span class="testes">Testes físicos</span>
+            <span class="jogos">Jogos</span>
+          </div>
+        </section>
+
+        <!-- Teste físico / presença -->
+        <section class="teste-fisico card">
+          <h3 style="background: #0e722e; color: #fff; padding: 8px; border-radius: 6px; text-align: center; font-size: 14px; margin-bottom: 14px;">
+            TESTE DE DESENVOLVIMENTO FÍSICO
+          </h3>
+
+          <label>Preencha a data:</label>
+          <input type="date" placeholder="" />
+          <input type="text" placeholder="Tempo" />
+          <input type="text" placeholder="Gols" />
+          <input type="text" placeholder="Faltas" />
+          <input type="text" placeholder="Frequência Cardíaca Média (BPM)" />
+          <button class="btn-primary" style="width: 100%; margin-top: 12px;">Salvar Informações</button>
+
+          <h3 style="background: #333; color: #fff; padding: 8px; border-radius: 6px; text-align: center; font-size: 14px; margin: 24px 0 12px;">CONTROLE DE PRESENÇA</h3>
+          <label>Preencha a data:</label>
+          <input type="date" placeholder="" />
+          <div class="presenca">
+            <button class="presente">Presente</button>
+            <button class="faltou">Faltou</button>
+          </div>
+          <button class="btn-primary" style="width: 100%">Salvar Informações</button>
+        </section>
+
+        <!-- Feedback -->
+        <section class="feedback card">
+          <h3>Feedback Personalizado</h3>
+          <textarea placeholder="deixe seu comentário..."></textarea>
+          <button class="btn-primary">Enviar</button>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
