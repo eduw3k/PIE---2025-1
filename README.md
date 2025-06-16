@@ -1,13 +1,13 @@
-## ⚽ PlayUp - evolução, jogo e progresso - perfeito para jovens atletas criando sua história!
+## ⚽ PlayUp - A Rede Social de Performance para Jovens Jogadores de Futebol.
 
-Objetivo: Criar uma plataforma que combine monitoramento de performance e rede social para jovens jogadores de futebol, permitindo que treinadores, pais e os próprios atletas acompanhem o desenvolvimento técnico e físico, ao mesmo tempo em que constroem um “portfólio” esportivo. 
+Objetivo: Desenvolver o front-end de uma plataforma digital voltada para jovens jogadores de futebol, que combine funcionalidades de monitoramento de performance com elementos de rede social esportiva. O sistema permitirá que treinadores, pais/responsáveis e os próprios atletas acompanhem o desenvolvimento técnico, físico e comportamental dos jogadores ao longo do tempo. 
 
 ## 🛠️ Construído com
 
 Implementação em HTML + CSS + JS
 
-* [Balsamiq](https://balsamiq.com/) - Protótipo de Baixa Fidelidade
-* [Figma](https://www.figma.com/pt-br/downloads/) - Protótipo de Alta Fidelidade
+* [Visual Studio Code](https://code.visualstudio.com/) - Editor do código
+* [Figma](https://www.figma.com/pt-br/downloads/) - Protótipo de Baixa e Alta Fidelidade
 * [Lucidchart](https://www.lucidchart.com/pages/pt) - Diagrama de Caso de Uso
 
 ## ✒️ Autores
