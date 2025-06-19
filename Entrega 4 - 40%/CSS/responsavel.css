@@ -1,0 +1,182 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #2e2e2e;
+  padding: 20px;
+}
+
+/*grid principal*/
+.dashboard {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+}
+
+/*estilo base dos cards*/
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*Donut Charts*/
+.donut-chart {
+  display: flex;
+  gap: 40px;
+  padding-left: 90px;
+}
+.chart-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.donut {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+.donut.one {
+  background: conic-gradient(#1e7f3f 0 77%, #e0e0e0 0 100%);
+}
+.donut.two {
+  background: conic-gradient(#0057a0 0 67%, #e0e0e0 0 100%);
+}
+.donut::after {
+  content: '';
+  width: 56px;
+  height: 56px;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+}
+.percentage {
+  position: relative;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+.chart-label {
+  font-size: 30px;
+}
+
+/*Alertas*/
+.alert-list .alert {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  padding: 12px;
+}
+.icon-alert {
+  width: 24px;
+  height: 24px;
+  background: #e53935;
+  color: #fff;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+/*LISTA DE FALTAS*/
+.card.calendar {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.attendance-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.attendance-item span {
+  font-weight: 600;
+}
+
+.attendance-item button {
+  flex: 1;
+  margin-left: 16px;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 14px;
+}
+
+/* Presente = verde */
+.attendance-item .present {
+  background-color: #21703d;
+}
+
+/* Faltou = vermelho */
+.attendance-item .absent {
+  background-color: #e53935;
+}
+
+/*FEEDBACK CARD*/
+.card.feedback-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  padding: 20px;              
+}
+
+.feedback-card h4 {
+  background: #fdcb02;
+  padding: 8px;               
+  border-radius: 6px;
+  display: block;             
+  width: 100%;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.feedback-card p {
+  background: #f5f5f5;
+  padding: 10px;
+  border-radius: 8px;
+  margin: 8px 0 25px;
+  font-size: 14px;
+  display: block;
+  width: 100%;                
+  box-sizing: border-box;
+}
+
+.feedback-card p:last-child {
+  margin-bottom: 0;
+}
+
+/*BOTÃO SAIR*/
+.btn-sair {
+  color: #000000;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  margin-top: 35px;;
+}
