@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogador-Tela central</title>
+    <link rel="stylesheet" href="../css/jogador.css">
+    <script src="../js/jogador.js"></script>
+</head>
+<body>
+    <div class="container">
+      <!-- SIDEBAR -->
+     <aside class="sidebar">
+  <!-- Bloco principal de conteúdo da sidebar -->
+  <div>
+    <div class="card">
+      <h3>Nome do jogador</h3>
+      <button>🏆 SUB17 CAMPEONATO<br /><span>Jun 2024</span></button>
+      <button>🏆 SUB17 CAMPEONATO<br /><span>Jan 2025</span></button>
+    </div>
+
+    <div class="card">
+      <h3>Acessar avaliações</h3>
+      <button>⚽ TREINOS<br /><span>Jan 2025</span></button>
+      <button>⚽ TREINOS<br /><span>Fev 2025</span></button>
+      <button>⚽ TREINOS<br /><span>Mar 2025</span></button>
+    </div>
+   
+      <div class="card test-selector">
+        <h3>Avaliação pós treino</h3>
+        <p class="texto-pergunta">Qual foi o seu rendimento no treino de hoje?</p>
+        <label for="data">Preencha a data:</label>
+        <input type="date" id="data"/>
+        <div class="enquete" id="avaliacao"></div>
+        <button class="btn-primary" style= "background-color: #0057a0;" onclick="salvarAvaliacao()">Salvar informações</button>
+      </div>
+
+      <a href="../html/login.html" class="btn-sair" style="background-color: #ff3b389b; font-size: 15px;">Sair ⍈</a>
+    </aside>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="main">
+      <!-- Estatísticas -->
+      <div class="card stats-card">
+        <h3>Desenvolvimento físico - (DATA)</h3>
+        <div class="stats-center">
+          <div><strong>25</strong><br>TEMPO</div>
+          <div><strong>0</strong><br>FALTA</div>
+        </div>
+        <div class="stats-center">
+          <div><strong>3</strong><br>GOLS</div>
+          <div><strong>160</strong><br>FREQ. CARDÍACA<br>(BPM)</div>
+        </div>
+      </div>
+
+      <!-- Feedbacks -->
+      <div class="card feedback-card">
+        <h4>Feedbacks do treinador:</h4>
+        <p>“Você está evoluindo bem! Continue focando na precisão dos seus passes para dominar o meio de campo.”</p>
+        <p>“Seu posicionamento foi inteligente nas últimas partidas. Isso mostra visão de jogo — próximo passo: buscar criar ainda mais oportunidades para seu time!”</p>
+        <p>“Seu controle de bola está cada vez mais sólido! Continue treinando para ganhar confiança em jogadas sob pressão.”</p>
+      </div>
+
+      <!-- Metas pessoais -->
+<div class="card goals-card">
+  <h3>Metas pessoais</h3>
+  <div id="metas-lista" class="metas-lista">
+    <div class="meta-item">
+      <span class="status" onclick="alternarStatus(this)"></span>
+      <textarea placeholder="Escreva sua meta..."></textarea>
+      <button class="remover-meta" onclick="removerMeta(this)">✕</button>
+    </div>
+  </div>
+
+  <button onclick="adicionarMeta()" class="btn-adicionar">+ Adicionar Meta</button>
+
+  <div class="legenda">
+    <p><span class="green"></span> Atingiu a meta</p>
+    <p><span class="red"></span> Não atingiu</p>
+  </div>
+</div>
+    </main>
+  </div>
+</body>
+</html>
