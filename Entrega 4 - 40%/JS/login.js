@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    // <<<-- GUARDA O USUÁRIO LOGADO
+    //guardar o usuário logado no LocalStorage
     localStorage.setItem("userLogado", JSON.stringify(user));
 
     switch (user.tipo) {
