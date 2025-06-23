@@ -42,7 +42,7 @@ input {
   margin-bottom: 15px;
 }
 
-/* Botão "Entrar" */
+/*botão entrar*/
 #botao-entrar {
   background-color: #0052cc;
   color: white;
@@ -55,7 +55,7 @@ input {
   transition: background-color 0.3s;
 }
 
-/* Botão "Crie uma conta" */
+/*botão criar conta*/
 .criar-conta {
   background-color: #ffc800;
   border: none;
@@ -67,7 +67,6 @@ input {
   transition: background-color 0.3s;
 }
 
-/* Link dentro do botão */
 .criar-conta a {
   text-decoration: none;
   color: black;

@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #2e2e2e; /*fundo cinza escuro*/
+    background-color: #2e2e2e;
     min-height: 100vh;
     display: flex;
     padding: 0;
@@ -45,7 +45,6 @@ body {
     padding: 0; 
 }
 
-    
 .option-button:hover {
     background-color: #1c1c1c00;
 }

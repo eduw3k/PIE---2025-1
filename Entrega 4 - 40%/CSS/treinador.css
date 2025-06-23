@@ -1,220 +1,249 @@
 :root {
-        --primary: #0057a0;
-        --primary-dark: #0057a0;
-        --success: #1e7f3f;
-        --danger: #c02020;
-        --bg: #2d2d2d;
-        --card-bg: #ffffff;
-        --sidebar-width: 280px;
-        --radius: 12px;
-        --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
-        --shadow-md: 0 2px 8px rgba(0, 0, 0, 0.12);
-      }
+  --primary: #0057a0;
+  --primary-dark: #0057a0;
+  --success: #1e7f3f;
+  --danger: #c02020;
+  --bg: #2d2d2d;
+  --card-bg: #ffffff;
+  --sidebar-width: 280px;
+  --radius: 12px;
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
 
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
 
-      body {
-        background: var(--bg);
-        color: #2e2e2e;
-        min-height: 100vh;
-        display: flex;
-      }
+body {
+  background: var(--bg);
+  color: #2e2e2e;
+  min-height: 100vh;
+  display: flex;
+}
 
-      /* ======= LAYOUT PRINCIPAL ======= */
-      .container {
-        flex: 1;
-        display: flex;
-        padding: 30px;
-      }
+/*layout principal*/
+.container {
+  flex: 1;
+  display: flex;
+  padding: 30px;
+}
 
-      aside.sidebar {
-        width: 280px;
-        background: var(--card-bg);
-        padding: 10px 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        box-shadow: 4px 0 12px rgba(0, 0, 0, 0.15);
-        border-radius: 10px;
-      }
+aside.sidebar {
+  width: 280px;
+  background: var(--card-bg);
+  padding: 10px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 4px 0 12px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
 
-      /* ======= CARTÕES DA SIDEBAR ======= */
-      .sidebar .card {
-        background: none;
-        box-shadow: none;
-        margin-bottom: 24px;
-      }
+/*cartões da sidebar*/
+.sidebar .card {
+  background: none;
+  box-shadow: none;
+  margin-bottom: 24px;
+}
 
-      .sidebar h3 {
-        font-size: 16px;
-        margin-bottom: 12px;
-        color: #1a1a1a;
-      }
+.sidebar h3 {
+  font-size: 16px;
+  margin-bottom: 12px;
+  color: #1a1a1a;
+}
 
-      .sidebar button {
-        width: 100%;
-        border: none;
-        text-align: left;
-        background: #f0f2f5;
-        padding: 10px 12px;
-        margin-bottom: 15px;
-        border-radius: 8px;
-        font-size: 14px;
-        box-shadow: var(--shadow-sm);
-        transition: background 0.2s ease;
-      }
-      .sidebar button:hover {
-        background: #e2e6ec;
-        cursor: pointer;
-      }
-      .sidebar button span {
-        font-size: 12px;
-      }
+.sidebar button {
+  width: 100%;
+  border: none;
+  text-align: left;
+  background: #f0f2f5;
+  padding: 10px 12px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  font-size: 14px;
+  box-shadow: var(--shadow-sm);
+  transition: background 0.2s ease;
+}
 
-      /* ======= BOTÃO SAIR ======= */
-      .btn-sair {
-        color: #000000;
-        font-weight: 800;
-        display: flex; 
-        align-items: center; 
-        justify-content: center;
-        padding: 5px;
-      }
+.sidebar button:hover {
+  background: #e2e6ec;
+  cursor: pointer;
+}
 
-      /* ======= ÁREA PRINCIPAL (GRID) ======= */
-      main.main {
-        flex: 1;
-        padding: 30px;
-        display: grid;
-        grid-template-columns: 1fr 1fr 320px; /* duas colunas largas + uma mais estreita */
-        grid-auto-rows: auto;
-        gap: 30px;
-        background: var(--bg);
-      }
+.sidebar button span {
+  font-size: 12px;
+}
 
-      /* utilitário de cartão */
-      .card {
-        background: var(--card-bg);
-        border-radius: var(--radius);
-        padding: 24px;
-        box-shadow: var(--shadow-md);
-      }
+/*botão de sair*/
+.btn-sair {
+  color: #000000;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
 
-      /* Colocação em grid */
-      .alerta {
-        grid-column: 1 / -1; 
-      }
-      .grafico {
-        grid-column: 1 / 3; 
-        border: 2px solid var(--primary);
-      }
-      .teste-fisico {
-        grid-column: 3 / 4; 
-      }
-      .feedback {
-        grid-column: 1 / -1; 
-      }
+/*área principal*/
+main.main {
+  flex: 1;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 320px; /* duas colunas largas + uma mais estreita */
+  grid-auto-rows: auto;
+  gap: 30px;
+  background: var(--bg);
+}
 
-      /* ======= COMPONENTES ESPECÍFICOS ======= */
-      textarea {
-        width: 100%;
-        min-height: 90px;
-        padding: 10px 12px;
-        border-radius: 8px;
-        border: 1px solid #ccc;
-        resize: vertical;
-        font-size: 14px;
-        margin-top: 8px;
-      }
+/*utilitário de cartão*/
+.card {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  padding: 24px;
+  box-shadow: var(--shadow-md);
+}
 
-      .btn-primary {
-        display: inline-block;
-        margin-top: 14px;
-        padding: 10px 18px;
-        background: var(--primary);
-        color: #fff;
-        border: none;
-        border-radius: 8px;
-        font-size: 14px;
-        cursor: pointer;
-        transition: background 0.25s;
-      }
-      .btn-primary:hover {
-        background: rgba(0, 55, 158, 0.707);
-        transition: background 0.3s;
-      }
+/*colocação em grid*/
+.alerta {
+  grid-column: 1 / -1;
+}
 
-      /* GRAFICO & LEGENDA */
-      .grafico img {
-        width: 100%;
-        max-height: 280px;
-        object-fit: contain;
-        margin: 20px 0;
-      }
-      .legenda {
-        margin-top: 4px;
-      }
-      .legenda span {
-        font-size: 14px;
-        margin-right: 18px;
-        position: relative;
-        padding-left: 18px; /* espaço para bolinha */
-      }
-      .legenda span::before {
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 12px;
-        height: 12px;
-        border-radius: 50%;
-      }
-      .legenda .treinos::before {
-        background: #1e7f3f;
-      }
-      .legenda .testes::before {
-        background: #fdcb02;
-      }
-      .legenda .jogos::before {
-        background: #0057a0; 
-      }
+.grafico {
+  grid-column: 1 / 3;
+  border: 2px solid var(--primary);
+}
 
-      /* Teste Físico */
-      .teste-fisico input[type="text"] {
-        width: 100%;
-        padding: 8px 10px;
-        margin: 6px 0;
-        border: 1px solid #ccc;
-        border-radius: 8px;
-        font-size: 14px;
-      }
+.teste-fisico {
+  grid-column: 3 / 4;
+}
 
-      /* Presença */
-      .presenca {
-        display: flex;
-        gap: 12px;
-        margin: 10px 0 12px;
-      }
-      .presenca button {
-        flex: 1;
-        padding: 10px;
-        border: none;
-        border-radius: 8px;
-        font-size: 14px;
-        cursor: pointer;
-        font-weight: 600;
-      }
-      .presente {
-        background: #1e7f3f;
-        color: white;
-      }
-      .faltou {
-        background: #ff3c38;
-        color: white;
-      }
+.feedback {
+  grid-column: 1 / -1;
+}
+
+/*componentes específicos*/
+textarea {
+  width: 100%;
+  min-height: 90px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  resize: vertical;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.btn-primary {
+  display: inline-block;
+  margin-top: 14px;
+  padding: 10px 18px;
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.25s;
+}
+
+.btn-primary:hover {
+  background: rgba(0, 55, 158, 0.707);
+  transition: background 0.3s;
+}
+
+/*gráfico/legenda*/
+.grafico img {
+  width: 100%;
+  max-height: 280px;
+  object-fit: contain;
+  margin: 20px 0;
+}
+
+.legenda {
+  margin-top: 4px;
+}
+
+.legenda span {
+  font-size: 14px;
+  margin-right: 18px;
+  position: relative;
+  padding-left: 18px; /*espaço para bolinha*/
+}
+
+.legenda span::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.legenda .treinos::before {
+  background: #1e7f3f;
+}
+
+.legenda .testes::before {
+  background: #fdcb02;
+}
+
+.legenda .jogos::before {
+  background: #0057a0;
+}
+
+/*teste físico*/
+.teste-fisico input[type="text"] {
+  width: 100%;
+  padding: 8px 10px;
+  margin: 6px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+/*controle de pesença*/
+.presenca {
+  display: flex;
+  gap: 12px;
+  margin: 10px 0 12px;
+}
+
+.presenca button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.presente {
+  background: #1e7f3f;
+  color: white;
+}
+
+.faltou {
+  background: #ff3c38;
+  color: white;
+}
+
+.presenca button.selecionado.presente {
+  border: 3px solid #0e722e;
+  background-color: #e5ffe5;
+  color: black;
+  font-weight: bold;
+}
+
+.presenca button.selecionado.faltou {
+  border: 3px solid #b30000;
+  background-color: #ffe5e5;
+  color: #000;
+  font-weight: bold;
+}
