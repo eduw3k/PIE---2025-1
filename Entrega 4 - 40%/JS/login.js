@@ -21,12 +21,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
     switch (user.tipo) {
       case "jogador":
+        alert("Login realizado com sucesso! Bem-vindo, jogador.");
         window.location.href = "jogador.html";
         break;
       case "treinador":
+        alert("Login realizado com sucesso! Bem-vindo, treinador.");
         window.location.href = "treinador.html";
         break;
       case "responsavel":
+        alert("Login realizado com sucesso! Bem-vindo, responsável.");
         window.location.href = "responsavel.html";
         break;
       default:
